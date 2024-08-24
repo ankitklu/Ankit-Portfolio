@@ -8,6 +8,7 @@ import Skills from "./components/Skills/Skills";
 import Work from "./components/Work/Work";
 import Contact from "./components/Contact/Contact";
 import Code from "./components/Code/Code";
+import Internship from "./components/Internship/Internship";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="work" element={<Work />} />
           <Route path="contact" element={<Contact />} />
           <Route path="code" element={<Code/>}/>
+          <Route path="internship" element={<Internship/>}/>
         </Route>
       </Routes>
     </>
