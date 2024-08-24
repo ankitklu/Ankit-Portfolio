@@ -1,0 +1,185 @@
+.home_page {
+    .text_zone {
+        position: absolute;
+        left: 13%;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 40%;
+        max-height: 90%;
+    }
+    h1 {
+        color: #fff;
+        font-size: 58px;
+        line-height: 53px;
+        letter-spacing: 2px;
+        margin: 0;
+        font-weight: 400;
+
+        &:before {
+            content: "<h1>";
+            font-family: "La Belle Aurore";
+            color: #ffd700;
+            font-size: 18px;
+            position: absolute;
+            margin-top: -40px;
+            left: -15px;
+            opacity: 0.6;
+        }
+
+        &:after {
+            content: "<h1/>";
+            font-family: "La Belle Aurore";
+            color: #ffd700;
+            font-size: 18px;
+            position: absolute;
+            margin-top: 18px;
+            margin-left: 20px;
+            animation: fadeIn 1s 1.7s backwards;
+            opacity: 0.6;
+        }
+        img {
+            margin-left: 20px;
+            opacity: 0;
+            width: 32px;
+            height: 46px;
+            animation: rotateIn 1s 1.4s linear both;
+        }
+    }
+    h2 {
+        color: #8d8d8d;
+        margin-top: 25px;
+        font-weight: 400;
+        font-size: 13px;
+        font-family: sans-serif;
+        letter-spacing: 3px;
+        animation: fadeIn 1s 1.8s backwards;
+    }
+    .flat_button {
+        color: #ffd700;
+        font-size: 13px;
+        font-weight: 400;
+        letter-spacing: 4px;
+        font-family: sans-serif;
+        text-decoration: none;
+        padding: 10px 18px;
+        border: 1.5px solid #ffd700;
+        margin-top: 25px;
+        float: left;
+        animation: fadeIn 1s 1.8s backwards;
+        white-space: nowrap;
+
+        &:hover {
+            background: #ffd700;
+            color: #333;
+        }
+    }
+}
+.logo_container {
+    z-index: 0;
+    width: 700px;
+    height: 730px;
+    opacity: 1;
+    position: absolute;
+    top: 10%;
+    right: 20%;
+    bottom: 0;
+    left: auto;
+    margin: auto;
+    animation: fadeIn 1s 1.7s backwards;
+
+    .solid_logo {
+        position: absolute;
+        top: auto;
+        right: auto;
+        bottom: auto;
+        left: 0;
+        margin: auto;
+        width: 100%;
+        opacity: 1;
+        transform: rotateZ(20deg) !important;
+        z-index: 1;
+    }
+}
+
+@media (max-width: 768px) and (min-width: 475px) {
+    .logo_container {
+        width: 340px;
+        top: 40%;
+    }
+    .home_page {
+        .text_zone {
+            left: 14%;
+            top: 40%;
+            width: 75%;
+            h1 {
+                font-size: 48px;
+            }
+        }
+    }
+}
+@media (max-width: 475px) and (min-width: 380px) {
+    .logo_container {
+        width: 220px;
+        left: 20%;
+        top: 70%;
+        right: 20%;
+    }
+    .home_page {
+        .text_zone {
+            left: 12%;
+            top: 25%;
+            width: 70%;
+            h1 {
+                font-size: 38px;
+                line-height: 38px;
+
+                img {
+                    width: 25px;
+                    height: 32px;
+                }
+            }
+            h2 {
+                margin-top: 10px;
+                font-size: 10px;
+            }
+            .flat_button {
+                font-size: 10px;
+                padding: 8px 10px;
+                margin-top: 5px;
+            }
+        }
+    }
+}
+@media (max-width: 380px) and (min-width: 300px) {
+    .logo_container {
+        width: 220px;
+        left: 20%;
+        top: 90%;
+        right: 20%;
+    }
+    .home_page {
+        .text_zone {
+            left: 10%;
+            top: 30%;
+            width: 70%;
+            h1 {
+                font-size: 30px;
+                line-height: 35px;
+
+                img {
+                    width: 25px;
+                    height: 30px;
+                }
+            }
+            h2 {
+                margin-top: 10px;
+                font-size: 10px;
+            }
+            .flat_button {
+                font-size: 8px;
+                padding: 8px 10px;
+                margin-top: 5px;
+            }
+        }
+    }
+}
