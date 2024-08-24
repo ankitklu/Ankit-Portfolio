@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import AnimatedLetters from "../AnimatedLetters/AnimatedLetters";
 // import Logo from "./Logo/Logo";
+import LogoN from "./logo-n.png"
 import "./Home.scss";
 import Loader from "react-loaders";
 
@@ -67,9 +68,9 @@ const Home = () => {
           </Link>
         </div>
       </div>
-      {/* <div className="logo_container">
+      <div className="logo_container">
         <img className="solid_logo" src={LogoN} alt="Ankit" />
-      </div> */}
+      </div>
       <Loader type="pacman" />
     </>
   );

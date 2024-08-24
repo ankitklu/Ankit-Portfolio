@@ -37,11 +37,12 @@
             animation: fadeIn 1s 1.7s backwards;
             opacity: 0.6;
         }
+
         img {
             margin-left: 20px;
             opacity: 0;
-            width: 32px;
-            height: 46px;
+            width: 64px; // Increased width
+            height: 92px; // Increased height
             animation: rotateIn 1s 1.4s linear both;
         }
     }
@@ -74,6 +75,7 @@
         }
     }
 }
+
 .logo_container {
     z-index: 0;
     width: 700px;
@@ -117,6 +119,7 @@
         }
     }
 }
+
 @media (max-width: 475px) and (min-width: 380px) {
     .logo_container {
         width: 220px;
@@ -134,8 +137,8 @@
                 line-height: 38px;
 
                 img {
-                    width: 25px;
-                    height: 32px;
+                    width: 50px; // Increased width for smaller screens
+                    height: 64px; // Increased height for smaller screens
                 }
             }
             h2 {
@@ -150,6 +153,7 @@
         }
     }
 }
+
 @media (max-width: 380px) and (min-width: 300px) {
     .logo_container {
         width: 220px;
@@ -167,8 +171,8 @@
                 line-height: 35px;
 
                 img {
-                    width: 25px;
-                    height: 30px;
+                    width: 0px; // Increased width for even smaller screens
+                    height: 50px; // Increased height for even smaller screens
                 }
             }
             h2 {
