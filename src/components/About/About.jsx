@@ -35,23 +35,20 @@ const About = () => {
           </h1>
           <p>
             Hi! 👋 I'm Ankit, an engineering sophomore pursuing BTech in
-            Information Technology. I am a passionate self-learner, Open source
-            enthusiast, exploring and building projects 👨‍💻 and making things
+            Computer Science and Engineering. I am a passionate self-learner, Problem Solver, exploring and building projects 👨‍💻 and making things
             simple using various technologies.
           </p>
           <p align="LEFT">
-            I'm a very ambitious front-end developer looking for a role in
+            I'm a very ambitious software developer looking for a role in
             an established company with the opportunity to work with the latest
             technologies on challenging and diverse projects.
           </p>
           <p>
-            I'm quietly confident, naturally curious, and love to interact with
-            people and help others.
+            I possess good leadership qualitites and well communication skills which increases Team coordination.
           </p>
           <p>
             If I need to define myself in one sentence that would be an
-            Engineering Student interested in Dancing, Music Listener,
-            Illustrations lover, and tech-obsessed!!!
+            Engineering Student interested in Badminton, Fitness and a lot of Technology !!!
           </p>
           <div className="flat_button">
             <a target="_blank" href="/Ankit_resume.pdf">
