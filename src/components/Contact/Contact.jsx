@@ -19,24 +19,26 @@ const Contact = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-
+    console.log(form.current);
     emailjs
       .sendForm(
-        "service_de9ba8q",
-        "contact_form",
+        process.env.REACT_APP_EMAILJS_SERVICE_ID,
+        process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
         form.current,
-        "nFsn1mm84eC4YQdrb"
+        process.env.REACT_APP_EMAILJS_USER_ID
       )
       .then(
         () => {
           alert("Message successfully sent!");
           window.location.reload(false);
         },
-        () => {
+        (error) => {
+          console.error("Failed to send the message:", error);
           alert("Failed to send the message, please try again");
         }
       );
   };
+  
 
   return (
     <>
