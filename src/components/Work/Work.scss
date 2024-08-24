@@ -18,12 +18,12 @@
     }
     .image_box {
         position: relative;
-        flex: 1 1 20%;
+        flex: 1 1 30%;  // Increased width
         height: 200px;
         overflow: hidden;
         padding-bottom: 100px;
         border-radius: 10px;
-        max-width: calc(25% - 10px);
+        max-width: calc(33.33% - 20px); // Adjusted width to match increased flex basis
 
         .work_image {
             position: absolute;
@@ -99,6 +99,7 @@
         }
     }
 }
+
 @media (max-width: 1440px) and (min-width: 1024px) {
     .page {
         .work_page {
@@ -109,12 +110,14 @@
                 gap: 20px;
             }
             .image_box {
-                flex: 1 1 20%;
+                flex: 1 1 30%; // Increased width
                 height: 100px;
+                max-width: calc(33.33% - 15px); // Adjusted for increased width
             }
         }
     }
 }
+
 @media (max-width: 1024px) and (min-width: 768px) {
     .page {
         .work_page {
@@ -122,11 +125,11 @@
             top: 5%;
 
             .image_box {
-                flex: 2 2 30%;
+                flex: 2 2 40%; // Increased width
                 background-color: #ffd700;
                 height: 250px;
                 padding-bottom: 10px;
-                min-width: calc(40% - 10px);
+                min-width: calc(50% - 10px); // Adjusted for increased width
 
                 .title {
                     font-size: 18px;
@@ -142,6 +145,7 @@
         }
     }
 }
+
 @media (max-width: 768px) and (min-width: 475px) {
     .page {
         .work_page {
@@ -153,10 +157,10 @@
             }
 
             .image_box {
-                flex: 2 2 40%;
+                flex: 2 2 50%; // Increased width
                 height: 200px;
                 padding-bottom: 10px;
-                max-width: calc(50% - 10px);
+                max-width: calc(55% - 10px); // Adjusted for increased width
 
                 .title {
                     font-size: 15px;
@@ -172,6 +176,7 @@
         }
     }
 }
+
 @media (max-width: 475px) and (min-width: 375px) {
     .page {
         .work_page {
@@ -186,10 +191,10 @@
             }
 
             .image_box {
-                flex: 2 2 50%;
+                flex: 2 2 60%; // Increased width
                 height: 190px;
                 padding-bottom: 10px;
-                min-width: calc(130% - 10px);
+                min-width: calc(65% - 10px); // Adjusted for increased width
                 .title {
                     font-size: 15px;
                     font-weight: 600;
@@ -202,6 +207,7 @@
         }
     }
 }
+
 @media (max-width: 375px) and (min-width: 300px) {
     .page {
         .work_page {
@@ -219,10 +225,10 @@
             }
 
             .image_box {
-                flex: 1 1 50%;
+                flex: 1 1 60%; // Increased width
                 height: 170px;
                 padding-bottom: 10px;
-                min-width: calc(200% - 10px);
+                min-width: calc(75% - 10px); // Adjusted for increased width
 
                 .title {
                     font-size: 13px;

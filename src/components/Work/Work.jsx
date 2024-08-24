@@ -26,7 +26,7 @@ const Work = () => {
                 <p className="title">{work.title}</p>
                 <h4 className="description">{work.description}</h4>
                 <button className="btn" onClick={() => window.open(work.url)}>
-                  View
+                  View Github Repo
                 </button>
               </div>
             </div>
