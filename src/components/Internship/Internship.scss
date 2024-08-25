@@ -1,81 +1,95 @@
 .internship-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; // Space between each internship entry
+  margin-left: 60px;
+  margin-top: 30px;
+  max-height: 100vh; // Maximum height set to viewport height
+  overflow-y: auto; // Enable vertical scrolling if content exceeds max-height
+
+  // Responsive adjustments for tablets
+  @media (max-width: 768px) {
+    margin-left: 20px; // Reduce left margin on smaller screens
+    margin-right: 20px; // Add right margin for better spacing
+  }
+
+  // Responsive adjustments for mobile devices
+  @media (max-width: 480px) {
+    margin-left: 10px; // Further reduce left margin for mobile
+    margin-right: 10px; // Further reduce right margin for mobile
+    gap: 10px; // Decrease space between entries on mobile
+  }
+}
+
+.internship-experience {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  padding: 15px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px cyan;
+
+    .internship-details .position {
+      color: #007bff;
+    }
+
+    .internship-details .duration-location {
+      color: #ff5722;
+    }
+
+    .internship-details .description {
+      color: #4caf50;
+    }
+  }
+
+  .internship-logo {
+    margin-right: 20px;
+    img {
+      max-width: 200px;
+      max-height: 200px;
+      object-fit: contain;
+      border: 3px solid cyan;
+      border-radius: 8px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 0 10px cyan;
+    }
+
+    &:hover img {
+      transform: scale(1.05);
+    }
+  }
+
+  .internship-details {
     display: flex;
     flex-direction: column;
-    gap: 20px; /* Decreased space between each internship entry */
-    margin-left: 60px; /* Decreased left margin */
-    margin-top: 30px; /* Applied top margin */
-  }
-  
-  .internship-experience {
-    display: flex;
-    align-items: flex-start;
-    margin-bottom: 20px; /* Decreased bottom margin */
-    padding: 15px; /* Decreased padding */
-    border: 1px solid #e0e0e0; /* Decreased border size */
-    border-radius: 8px; /* Slightly rounded corners */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Added transition for hover effects */
-    position: relative; /* Needed for absolute positioning of the cyan shadow */
-  
-    &:hover {
-      transform: translateY(-5px); /* Slight upward movement on hover */
-      box-shadow: 0 0 20px cyan; /* Cyan shadow effect on hover */
-  
-      .internship-details .position {
-        color: #007bff; /* Change text color on hover */
-      }
-  
-      .internship-details .duration-location {
-        color: #ff5722; /* Change text color on hover */
-      }
-  
-      .internship-details .description {
-        color: #4caf50; /* Change text color on hover */
-      }
+    margin-left: 10px;
+
+    .position {
+      font-size: 3em;
+      margin-bottom: 2px;
+      color: #333;
+      transition: color 0.3s ease;
     }
-  
-    .internship-logo {
-      margin-right: 20px; /* Decreased right margin */
-      img {
-        max-width: 200px; /* Decreased logo size */
-        max-height: 200px; /* Decreased logo size */
-        object-fit: contain;
-        border: 3px solid cyan; /* Added cyan border */
-        border-radius: 8px; /* Rounded corners for the border */
-        transition: transform 0.3s ease, box-shadow 0.3s ease; /* Added transition for hover effects */
-        box-shadow: 0 0 10px cyan; /* Added cyan shadow effect */
-      }
-  
-      &:hover img {
-        transform: scale(1.05); /* Slight zoom effect on hover */
-      }
+
+    .duration-location {
+      font-size: 1.5em;
+      color: gray;
+      margin-bottom: 5px;
+      transition: color 0.3s ease;
     }
-  
-    .internship-details {
-      display: flex;
-      flex-direction: column;
-      margin-left: 10px; /* Added left margin to align text with logo */
-  
-      .position {
-        font-size: 3em; /* Decreased font size */
-        margin-bottom: 2px; /* Reduced margin below position */
-        color: #333; /* Darker color for better visibility */
-        transition: color 0.3s ease; /* Added transition for color change */
-      }
-  
-      .duration-location {
-        font-size: 1.5em; /* Decreased font size */
-        color: gray;
-        margin-bottom: 5px; /* Decreased margin below duration and location */
-        transition: color 0.3s ease; /* Added transition for color change */
-      }
-  
-      .description {
-        font-size: 2em; /* Decreased font size */
-        line-height: 1.6; /* Adjusted line height for readability */
-        color: #666; /* Slightly darker color for better readability */
-        margin-top: 5px; /* Added margin on top for spacing */
-        transition: color 0.3s ease; /* Added transition for color change */
-      }
+
+    .description {
+      font-size: 2em;
+      line-height: 1.6;
+      color: #666;
+      margin-top: 5px;
+      transition: color 0.3s ease;
     }
   }
-  
+}
