@@ -49,7 +49,7 @@ const Skills = () => {
             <span class="tech_tag"> Git</span>,
           </p>
           <p>
-          As a dedicated coder, I take pride in my expertise in web development and problem-solving. I enjoy the process of turning ideas into functional, visually stunning websites that prioritize both user experience and performance. Problem-solving is where I truly excel; I thrive on the challenge of dissecting complex issues and devising efficient, creative solutions. With a solid grasp of algorithms and a relentless drive to learn, I’m always pushing myself to refine my skills and deliver top-notch results. Whether it's debugging code or optimizing a website, I approach every task with enthusiasm and a commitment to excellence.
+          As a dedicated coder, I take pride in my expertise in web development and problem-solving. I enjoy the process of turning ideas into functional, visually stunning websites that prioritize both user experience and performance. Problem-solving is where I truly excel; I thrive on the challenge of dissecting complex issues, creative solutions. With a solid grasp of algorithms and a relentless drive to learn. Whether it's debugging code or optimizing a website, I approach every task with enthusiasm and a commitment to excellence.
           </p>
           <p>
             Visit my
