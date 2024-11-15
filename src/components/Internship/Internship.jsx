@@ -11,6 +11,13 @@ const Internship = () => {
     const timer = setTimeout(() => {
       setInternships([
         {
+          logo: 'https://d3fu8elvld6rb5.cloudfront.net/learnyard.com/img/favicon.png',
+          position: 'TCW Intern',
+          duration: 'Oct 2024 - Present',
+          location: 'Bengaluru (Remote)',
+          description: 'Creating DSA contents on sliding window and other data structure algorithm questions and contributing to read.learnyard.com',
+        },
+        {
           logo: 'https://th.bing.com/th/id/OIP.O_WAXsBL9aPH9O7Pz-PamQAAAA?rs=1&pid=ImgDetMain',
           position: 'Software Engineering Intern',
           duration: 'May 2024 - September 2024',
