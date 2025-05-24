@@ -6,14 +6,30 @@ const Internship = () => {
   const [loading, setLoading] = useState(true); // State to handle loading spinner
   const [internships, setInternships] = useState([]); // State to store internship data
 
+
+
   useEffect(() => {
     // Simulate a delay for loading
     const timer = setTimeout(() => {
       setInternships([
         {
-          logo: 'https://d3fu8elvld6rb5.cloudfront.net/learnyard.com/img/favicon.png',
-          position: 'TCW Intern',
-          duration: 'Oct 2024 - Present',
+          logo: 'https://firebasestorage.googleapis.com/v0/b/whatsapp-clone-1985c.appspot.com/o/ly%20gif.gif?alt=media&token=8c6cdce7-9fad-45e1-81d4-4bf0a687a549',
+          position: 'Software Development Engineer Intern',
+          duration: 'April 2025 - Present',
+          location: 'UAE (Remote)',
+          description: 'Tech Stack:- TypeScript, React.js, Fastify, PostgreSQL, tRPC, Docker, Git',
+        },
+        {
+          logo: 'https://firebasestorage.googleapis.com/v0/b/whatsapp-clone-1985c.appspot.com/o/Aximos%20logo.png?alt=media&token=270a094e-4d7a-4e83-9272-4b6dad689bce',
+          position: 'Backend Developer Intern',
+          duration: 'Jan 2025 - April 2025',
+          location: 'Bengaluru (Remote)',
+          description: 'Tech Stack:- TypeScript, Next.js, Node.js, AWS, MySQL, Git, REST',
+        },
+        {
+          logo: 'https://firebasestorage.googleapis.com/v0/b/whatsapp-clone-1985c.appspot.com/o/ly%20gif.gif?alt=media&token=8c6cdce7-9fad-45e1-81d4-4bf0a687a549',
+          position: 'Product Intern',
+          duration: 'Oct 2024 - April 2025',
           location: 'Bengaluru (Remote)',
           description: 'Creating DSA contents on sliding window and other data structure algorithm questions and contributing to read.learnyard.com',
         },
@@ -25,7 +41,7 @@ const Internship = () => {
           description: 'Developed and maintained web applications using React.js and Node.js. Developed attractive UI using react.js. Worked with the Deployment team. Technology:- React.js, JavaScript, Node.js, CSS ',
         },
         {
-          logo: 'https://www.theindianwire.com/wp-content/uploads/2017/07/swiggy-logo.png',
+          logo: 'https://firebasestorage.googleapis.com/v0/b/whatsapp-clone-1985c.appspot.com/o/swiggy%20png.gif?alt=media&token=ce8ff9a5-877b-4229-bb8a-a493129f0048',
           position: 'Campus CEO Intern',
           duration: 'January 2024 - April 2024',
           location: 'KL University, Vijayawada',

@@ -40,10 +40,13 @@ const Skills = () => {
           <p>
             I am a "PROGRAMMER" and I like to code in 
             <span class="tech_tag"> Java 11</span>,
+            The tech I know and work with are:
             <span class="tech_tag"> HTML5</span>,
             <span class="tech_tag"> CSS3</span>,
             <span class="tech_tag"> JavaScript</span>,
-            <span class="tech_tag"> React</span>,
+            <span class="tech_tag"> TypeScript</span>,
+            <span class="tech_tag"> React.js</span>,
+            <span class="tech_tag"> Next.js</span>,
             <span class="tech_tag"> Node.js</span>,
             <span class="tech_tag"> Tailwind Css</span>,
             <span class="tech_tag"> Git</span>,
