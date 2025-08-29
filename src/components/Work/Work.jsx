@@ -26,7 +26,7 @@ const Work = () => {
                 <p className="title">{work.title}</p>
                 <h4 className="description">{work.description}</h4>
                 <button className="btn" onClick={() => window.open(work.url)}>
-                  View Github Repo
+                  View Website
                 </button>
               </div>
             </div>
@@ -43,23 +43,14 @@ const Work = () => {
           <AnimatedLetters
             letterClass={letterClass}
             strArray={[
-              "W",
+              "P",
+              "r",
               "o",
-              "r",
-              "k",
-              "",
-              "&",
-              "",
-              "E",
-              "x",
-              "p",
+              "j",
               "e",
-              "r",
-              "i",
-              "e",
-              "n",
               "c",
-              "e",
+              "t",
+              "s",
             ]}
             idx={15}
           />

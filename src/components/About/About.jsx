@@ -51,7 +51,7 @@ const About = () => {
             Engineering Student interested in Badminton, Fitness and a lot of Technology !!!
           </p>
           <div className="flat_button">
-            <a target="_blank" href="/Ankit_resume.pdf">
+            <a target="_blank" href="https://tinyurl.com/56ypz73m">
               RESUME
             </a>
           </div>
